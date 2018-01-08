@@ -1,0 +1,65 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  height: 64px;
+  background-color: white;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.logo {
+  display: flex;
+  position: flex-start;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.colmar {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.academy {
+  color: gray;
+  font-size: 32px;
+}
+
+.header-content nav {
+  position: flex-end;
+  color: black;
+}
+
+.header-content nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.intro-banner {
+  display: flex;
+  background-color: cornflowerblue;
+  height: 200px;
+}
+
+.learn-image img {
+  width: 60%;
+}
+
+.start {
+  background-color: black;
+}
+
+.start p {
+  font-size: 24px;
+  padding: 8px 48px;
+  color: white;
+}
