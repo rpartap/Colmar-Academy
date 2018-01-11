@@ -1,5 +1,6 @@
 html {
   font-family: Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -11,15 +12,20 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   position: flex-start;
+  align-items: center;
+  font-weight: bold;
+  height: 32px;
 }
 
-.logo img {
-  height: 32px;
+.logo span {
+  color: gray;
+  font-weight: normal;
 }
 
 .colmar {
@@ -36,30 +42,70 @@ header {
 .header-content nav {
   position: flex-end;
   color: black;
+  border: 1px solid black;
+  margin-left: 24px;
 }
 
 .header-content nav a {
   color: black;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.mobile-navigation {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 580px){
+.mobile {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro-banner {
   display: flex;
-  background-color: cornflowerblue;
-  height: 200px;
+  background-color: lightblue;
+  height: 700px;
+  width: auto;
 }
 
-.learn-image img {
+.banner-image {
+  padding: 32px 24px;
   width: 60%;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  border: 1px solid black;
+  padding-right: 48px;
+  width: 40%;
+}
+
+.banner-headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-subheadline {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .start {
   background-color: black;
-}
-
-.start p {
   font-size: 24px;
   padding: 8px 48px;
   color: white;
+  text-align: center;
 }
