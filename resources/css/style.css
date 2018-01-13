@@ -1,6 +1,5 @@
 html {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
 }
 
 header {
@@ -17,15 +16,19 @@ header {
 
 .logo {
   display: flex;
-  position: flex-start;
   align-items: center;
   font-weight: bold;
   height: 32px;
 }
 
+.logo-image {
+  flex-direction: row;
+}
+
 .logo span {
   color: gray;
   font-weight: normal;
+  align-items: center;
 }
 
 .colmar {
@@ -40,10 +43,7 @@ header {
 }
 
 .header-content nav {
-  position: flex-end;
-  color: black;
-  border: 1px solid black;
-  margin-left: 24px;
+  align-items: flex-end;
 }
 
 .header-content nav a {
@@ -65,16 +65,11 @@ header {
   display: none;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-}
-
 .intro-banner {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: lightblue;
-  height: 700px;
-  width: auto;
 }
 
 .banner-image {
@@ -83,29 +78,28 @@ header {
 }
 
 .banner-text {
-  display: flex;
-  flex-direction: column;
-  color: gray;
-  border: 1px solid black;
-  padding-right: 48px;
-  width: 40%;
+  padding: 24px 32px;
 }
 
-.banner-headline {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+.banner-text h1, h2 {
+  margin-bottom: 24px;
 }
 
-.banner-subheadline {
-  font-size: 2rem;
-  margin-bottom: 15px;
+h1 {
+  font-size: 48px;
 }
 
-.start {
-  background-color: black;
-  font-size: 24px;
-  padding: 8px 48px;
+h2 {
+  font-size: 32px;
+}
+
+button {
+  background: #484f4f;
+  width: 100%;
+  padding: 8px 0;
   color: white;
-  text-align: center;
+}
+
+.practice-container {
+
 }
