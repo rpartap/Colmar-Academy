@@ -123,15 +123,15 @@ button:hover {
  padding-bottom: 32px;
 }
 
-.left-container a {
+.right-container a {
   text-decoration: none;
 }
 
-.right-container {
+.left-container {
   width: 60%;
 }
 
-.right-container img, .practice-text p, .practice-text h1 {
+.left-container img, .practice-text p, .practice-text h1 {
   width: 95%;
   padding: 32px 24px;
 }
@@ -145,7 +145,7 @@ button:hover {
   font-size: 20px;
 }
 
-.left-container {
+.right-container {
   width: 40%;
 }
 
@@ -294,7 +294,7 @@ button:hover {
   font-weight: bold;
 }
 
-.right-container video {
+.left-container video {
   width: 95%;
   padding: 32px 24px;
 }
@@ -309,7 +309,7 @@ button:hover {
   font-size: 20px;
 }
 
-.left-container {
+.right-container {
   display: flex;
   flex-direction: column;
   width: 40%;
