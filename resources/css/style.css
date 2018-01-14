@@ -31,17 +31,6 @@ header {
   align-items: center;
 }
 
-.colmar {
-  color: black;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.academy {
-  color: gray;
-  font-size: 32px;
-}
-
 .header-content nav {
   align-items: flex-end;
 }
@@ -101,5 +90,216 @@ button {
 }
 
 .practice-container {
+ display: flex;
+ flex-direction: row;
+ padding-bottom: 32px;
 
+}
+
+.right-container {
+  width: 60%;
+}
+
+.right-container img, .practice-text p, .practice-text h1 {
+  width: 95%;
+  padding: 32px 24px;
+}
+
+.practice-text .credit {
+  padding-bottom: 32px;
+}
+
+.left-container {
+  width: 40%;
+}
+
+.orientation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid lightblue;
+}
+
+.orientation-image {
+  width: 35%;
+  padding: 32px 16px;
+}
+
+.orientation-text {
+  width: 65%;
+  padding: 32px 16px;
+}
+
+.orientation-text a {
+  color: blue;
+}
+
+.orientation-text p {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.campus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid lightblue;
+}
+
+.campus-image {
+  width: 35%;
+  padding: 32px 16px;
+}
+
+.campus-text {
+  width: 65%;
+  padding: 32px 16px;
+}
+
+.campus-text a {
+  color: blue;
+}
+
+.campus-text p {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.lecture {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  margin-bottom: 32px;
+}
+
+.lecture-image {
+  width: 35%;
+  padding: 32px 16px;
+}
+
+.lecture-text {
+  width: 65%;
+  padding: 32px 16px;
+}
+
+.lecture-text a {
+  color: blue;
+}
+
+.lecture-text p {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.start-learning-container {
+  background-color: lightblue;
+}
+
+.start-learning-container .title {
+  display: flex;
+  padding-top: 32px;
+  justify-content: center;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 72px;
+}
+
+.engineering, .computer, .design, .data, .business, .marketing {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 30%;
+  margin: 32px 16px;
+  background-color: white;
+}
+
+.engineering-text, .computer-text, .design-text, .data-text, .business-text, .marketing-text {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  color: gray;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.courses-container .subheading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.thesis-container {
+  background-color: white;
+  padding-top: 32px;
+}
+
+.thesis-container .title {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+}
+
+.right-container video {
+  width: 95%;
+  padding: 32px 24px;
+}
+
+.thesis-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis-text {
+  margin: 24px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 32px;
+}
+
+.fisma, .new-york {
+  display: flex;
+  flex-direction: row;
+}
+
+.fisma-text, .new-york-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.fisma-image, .new-york-image {
+  margin: 24px;
+  width: 35%;
+}
+
+.fisma {
+  background-color: lightblue;
+}
+
+.fisma-text p, .new-york-text p, .thesis-text p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+.thesis-text h1 {
+  margin-bottom: 8px;
+}
+
+.new-york {
+  margin-bottom: 32px;
 }
