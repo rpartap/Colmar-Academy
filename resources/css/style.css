@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'), url(https://fonts.gstatic.com/s/alegreyasans/v8/KYNzioYhDai7mTMnx_gDgsmBRJoLbs7X6hY7yFEc97Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'), url(https://fonts.gstatic.com/s/alegreyasans/v8/11EDm-lum6tskJMBbdy9acrysgx4XYXiGyd0rEkyLBs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Alegreya Sans' sans-serif;
+  color: #696969;
 }
 
 header {
@@ -26,7 +43,7 @@ header {
 }
 
 .logo span {
-  color: gray;
+  color: #696969;
   font-weight: normal;
   align-items: center;
 }
@@ -38,8 +55,12 @@ header {
 .header-content nav a {
   color: black;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   padding: 4px;
+}
+
+.header-content nav a:hover {
+  color: blue;
 }
 
 .mobile-navigation {
@@ -58,7 +79,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: lightblue;
+  background-color: #1F78B2;
 }
 
 .banner-image {
@@ -76,10 +97,12 @@ header {
 
 h1 {
   font-size: 48px;
+  color: white;
 }
 
 h2 {
   font-size: 32px;
+  color: white;
 }
 
 button {
@@ -89,11 +112,19 @@ button {
   color: white;
 }
 
+button:hover {
+  background-color: #FFB40D;
+  color: black;
+}
+
 .practice-container {
  display: flex;
  flex-direction: row;
  padding-bottom: 32px;
+}
 
+.left-container a {
+  text-decoration: none;
 }
 
 .right-container {
@@ -105,8 +136,13 @@ button {
   padding: 32px 24px;
 }
 
+.practice-text p {
+  font-size: 20px;
+}
+
 .practice-text .credit {
   padding-bottom: 32px;
+  font-size: 20px;
 }
 
 .left-container {
@@ -117,7 +153,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid lightblue;
+  border: 1px solid #1F78BF;
 }
 
 .orientation-image {
@@ -128,6 +164,7 @@ button {
 .orientation-text {
   width: 65%;
   padding: 32px 16px;
+  font-size: 20px;
 }
 
 .orientation-text a {
@@ -143,7 +180,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid lightblue;
+  border: 1px solid #1F78BF;
 }
 
 .campus-image {
@@ -154,6 +191,7 @@ button {
 .campus-text {
   width: 65%;
   padding: 32px 16px;
+  font-size: 20px;
 }
 
 .campus-text a {
@@ -169,8 +207,8 @@ button {
   display: flex;
   align-items: center;
   flex-direction: row;
-  border: 1px solid lightblue;
-  background-color: lightblue;
+  border: 1px solid #1F78BF;
+  background-color: #FFB40D;
   margin-bottom: 32px;
 }
 
@@ -182,6 +220,7 @@ button {
 .lecture-text {
   width: 65%;
   padding: 32px 16px;
+  font-size: 20px;
 }
 
 .lecture-text a {
@@ -194,13 +233,14 @@ button {
 }
 
 .start-learning-container {
-  background-color: lightblue;
+  background-color: #1F78B2;
 }
 
 .start-learning-container .title {
   display: flex;
-  padding-top: 32px;
+  padding-top: 64px;
   justify-content: center;
+  font-weight: bold;
 }
 
 .courses-container {
@@ -219,6 +259,10 @@ button {
   background-color: white;
 }
 
+.engineering p, .computer p, .design p, .data p, .business p, .marketing p {
+  font-size: 20px;
+}
+
 .engineering-text, .computer-text, .design-text, .data-text, .business-text, .marketing-text {
   display: flex;
   flex-direction: column;
@@ -230,11 +274,12 @@ button {
 .heading {
   font-weight: bold;
   font-size: 32px;
+  color: #696969;
 }
 
 .courses-container .subheading {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .thesis-container {
@@ -246,6 +291,7 @@ button {
   display: flex;
   padding: 32px;
   justify-content: center;
+  font-weight: bold;
 }
 
 .right-container video {
@@ -260,6 +306,7 @@ button {
 
 .thesis-text {
   margin: 24px;
+  font-size: 20px;
 }
 
 .left-container {
@@ -281,13 +328,17 @@ button {
   width: 65%;
 }
 
+.fisma-text p, .new-york-text p {
+  font-size: 20px;
+}
+
 .fisma-image, .new-york-image {
   margin: 24px;
   width: 35%;
 }
 
 .fisma {
-  background-color: lightblue;
+  background-color: #FFB40D;
 }
 
 .fisma-text p, .new-york-text p, .thesis-text p {
@@ -302,4 +353,33 @@ button {
 
 .new-york {
   margin-bottom: 32px;
+}
+
+footer {
+  border-top: 1px solid gray;
+  color: gray;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.terms {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.privacy {
+  text-decoration: none;
 }
