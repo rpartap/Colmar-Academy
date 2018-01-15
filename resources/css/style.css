@@ -169,6 +169,10 @@ button:hover {
   text-decoration: none;
 }
 
+.practice-text h1 {
+  color: #696969;
+}
+
 /*second block left side orientation box*/
 
 .orientation {
@@ -449,13 +453,17 @@ footer {
 /*Responsive Code*/
 
 /*logo navigation bar*/
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 840px) {
   .intro-banner {
     flex-direction: column;
   }
+
+  .banner-img {
+    padding: 0px;
+  }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
 .header-content-mobile {
   display: block;
 }
@@ -479,19 +487,21 @@ footer {
 }
 
 /*first block*/
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 840px) {
   .banner-image {
     width: 100%;
+    padding-top: 0px;
   }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
   .intro-banner {
     flex-direction: column;
   }
 
   .banner-image {
     width: 100%;
+    padding: 0px;
   }
 
   .banner-text h1 {
@@ -506,12 +516,27 @@ footer {
   button {
     margin-bottom: 32px;
   }
-
+}
   /*second block*/
-@media only screen and (max-width: 768px){
-  
+@media only screen and (min-width: 481px) and (max-width: 840px) {
+  .practice-container {
+    flex-direction: column;
+  }
 
-@media only screen and (max-width: 480px){
+  .orientation, .campus, .lecture {
+    flex-direction: column;
+    }
+
+  .practice-text h1, .practice-text p {
+    padding: 16px 12px;
+  }
+
+  .right-container, .left-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .left-container {
     display: none;
   }
@@ -556,9 +581,36 @@ footer {
   }
 
   /*third block*/
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 840px) {
+  .courses-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 
-@media only screen and (max-width: 480px){
+  .engineering, .computer, .design, .data, .business, .marketing {
+    width: 75%;
+    justify-content: center;
+    background-color: #1F78B2;
+  }
+
+  .engineering-image, .computer-image, .design-image, .data-image, .business-image, .marketing-image {
+    width: 90%;
+    align-self: center;
+  }
+
+  .engineering-text, .computer-text, .design-text, .data-text, .business-text, .marketing-text {
+    align-self: center;
+    margin: 0px;
+    color: white;
+  }
+
+  .courses-container .heading {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .engineering-mobile, .computer-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
     display: flex;
     flex-direction: column;
@@ -567,6 +619,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 8px;
+    padding: 8px;
   }
 
   .engineering-mobile a, .computer-mobile a, .design-mobile a, .data-mobile a, .business-mobile a, .marketing-mobile a {
@@ -596,16 +649,43 @@ footer {
 }
 
 /*fourth block*/
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 840px) {
+  .thesis-content {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis-container video {
+    display: block;
+    height: auto;
+  }
+
+  .fisma, .new-york {
+    flex-direction: column;
+  }
+
+  .fisma-image, .new-york-image, .fisma-text, .new-york-text {
+    width: 90%;
+  }
+
+  .fisma-text, .new-york-text {
+    padding-left: 16px;
+  }
+}
+
+/*footer*/
+@media only screen and (min-width: 481px) and (max-width: 840px) {
 
 }
 
-@media only screen and (max-width: 480px){
-  .thesis-container .right-container {
+@media only screen and (max-width: 480px) {
+  .footer-text .menu {
     display: none;
   }
 
-  .thesis-container .left-container video {
-    width: 100%;
+  .rights {
+    align-self: center;
+    padding: 16px;
   }
 }
