@@ -19,6 +19,18 @@ html {
   color: #696969;
 }
 
+h1 {
+  font-size: 48px;
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+/*top logo bar*/
+
 header {
   height: 64px;
   background-color: white;
@@ -33,20 +45,29 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   font-weight: bold;
   height: 32px;
 }
 
 .logo-image {
-  flex-direction: row;
 }
 
-.logo span {
-  color: #696969;
-  font-weight: normal;
-  align-items: center;
+.colmar {
+  color: black;
+  font-weight: bold;
 }
+
+.academy {
+  color: gray;
+  font-weight: normal;
+}
+
+.school-name {
+  align-self: center;
+}
+/*top navigation*/
 
 .header-content nav {
   align-items: flex-end;
@@ -63,17 +84,11 @@ header {
   color: blue;
 }
 
-.mobile-navigation {
+.header-content-mobile {
   display: none;
-  justify-content: space-around;
-  width: 100%;
-  padding: 0;
 }
 
-@media only screen and (min-width: 580px){
-.mobile {
-  display: none;
-}
+/*first section*/
 
 .intro-banner {
   display: flex;
@@ -83,9 +98,16 @@ header {
 }
 
 .banner-image {
+  display: flex;
   padding: 32px 24px;
   width: 60%;
 }
+
+.banner-image-mobile {
+  display: none;
+}
+
+/*first block side text*/
 
 .banner-text {
   padding: 24px 32px;
@@ -93,16 +115,7 @@ header {
 
 .banner-text h1, h2 {
   margin-bottom: 24px;
-}
-
-h1 {
-  font-size: 48px;
-  color: white;
-}
-
-h2 {
-  font-size: 32px;
-  color: white;
+  text-shadow: 1px 1px 1px #696969;
 }
 
 button {
@@ -117,15 +130,16 @@ button:hover {
   color: black;
 }
 
+/*second block*/
+
 .practice-container {
  display: flex;
  flex-direction: row;
  padding-bottom: 32px;
 }
 
-.right-container a {
-  text-decoration: none;
-}
+/*secong block left side*/
+
 
 .left-container {
   width: 60%;
@@ -145,9 +159,17 @@ button:hover {
   font-size: 20px;
 }
 
+/*second block right side*/
+
 .right-container {
   width: 40%;
 }
+
+.right-container a {
+  text-decoration: none;
+}
+
+/*second block left side orientation box*/
 
 .orientation {
   display: flex;
@@ -159,6 +181,10 @@ button:hover {
 .orientation-image {
   width: 35%;
   padding: 32px 16px;
+}
+
+.orientation-image-mobile {
+  display: none;
 }
 
 .orientation-text {
@@ -176,6 +202,8 @@ button:hover {
   padding-bottom: 24px;
 }
 
+/*second block left side campus box*/
+
 .campus {
   display: flex;
   flex-direction: row;
@@ -186,6 +214,10 @@ button:hover {
 .campus-image {
   width: 35%;
   padding: 32px 16px;
+}
+
+.campus-image-mobile {
+  display: none;
 }
 
 .campus-text {
@@ -203,6 +235,8 @@ button:hover {
   padding-bottom: 24px;
 }
 
+/*second block left side lecture box*/
+
 .lecture {
   display: flex;
   align-items: center;
@@ -215,6 +249,10 @@ button:hover {
 .lecture-image {
   width: 35%;
   padding: 32px 16px;
+}
+
+.lecture-image-mobile {
+  display: none;
 }
 
 .lecture-text {
@@ -232,6 +270,8 @@ button:hover {
   padding-bottom: 24px;
 }
 
+/*third block*/
+
 .start-learning-container {
   background-color: #1F78B2;
 }
@@ -241,6 +281,7 @@ button:hover {
   padding-top: 64px;
   justify-content: center;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #696969;
 }
 
 .courses-container {
@@ -257,6 +298,10 @@ button:hover {
   width: 30%;
   margin: 32px 16px;
   background-color: white;
+}
+
+.engineering-mobile, .computer-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
+  display: none;
 }
 
 .engineering p, .computer p, .design p, .data p, .business p, .marketing p {
@@ -282,22 +327,32 @@ button:hover {
   padding-bottom: 16px;
 }
 
+/*fourth block*/
+
 .thesis-container {
   background-color: white;
-  padding-top: 32px;
+  padding-top: 16px;
 }
 
 .thesis-container .title {
   display: flex;
-  padding: 32px;
+  padding: 16px;
   justify-content: center;
   font-weight: bold;
 }
+
+.thesis-container .title h1 {
+  color: #696969;
+}
+
+/*fourth block left side*/
 
 .left-container video {
   width: 95%;
   padding: 32px 24px;
 }
+
+/*fourth block left side text*/
 
 .thesis-content {
   display: flex;
@@ -308,6 +363,13 @@ button:hover {
   margin: 24px;
   font-size: 20px;
 }
+
+.thesis-text h1 {
+  margin-bottom: 8px;
+  color: #696969;
+}
+
+/*fourth block right side*/
 
 .right-container {
   display: flex;
@@ -347,13 +409,11 @@ button:hover {
   padding-right: 16px;
 }
 
-.thesis-text h1 {
-  margin-bottom: 8px;
-}
-
 .new-york {
   margin-bottom: 32px;
 }
+
+/*footer section*/
 
 footer {
   border-top: 1px solid gray;
@@ -370,6 +430,8 @@ footer {
   margin-bottom: 32px;
 }
 
+/*footer menu*/
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -382,4 +444,168 @@ footer {
 
 .privacy {
   text-decoration: none;
+}
+
+/*Responsive Code*/
+
+/*logo navigation bar*/
+@media only screen and (max-width: 768px){
+  .intro-banner {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px){
+.header-content-mobile {
+  display: block;
+}
+
+.mobile-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  height: 64px;
+}
+
+.header-content {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+}
+
+/*first block*/
+@media only screen and (max-width: 768px){
+  .banner-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .intro-banner {
+    flex-direction: column;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .banner-text h2 {
+    padding-bottom: 24px;
+  }
+
+  button {
+    margin-bottom: 32px;
+  }
+
+  /*second block*/
+@media only screen and (max-width: 768px){
+  
+
+@media only screen and (max-width: 480px){
+  .left-container {
+    display: none;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .practice-container {
+    padding-bottom: 0px;
+  }
+
+  .orientation, .campus, .lecture {
+    border: 0px;
+    flex-direction: column;
+    padding: 0px 16px 16px 16px;
+  }
+
+  .orientation-image, .campus-image, .lecture-image {
+    display: none;
+  }
+
+  .orientation-image-mobile, .campus-image-mobile, .lecture-image-mobile {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .lecture {
+    background-color: white;
+    margin-bottom: 0px;
+  }
+
+  .orientation-text, .campus-text, .lecture-text {
+    width: 100%;
+    padding: 16px;
+    margin-left: 32px;
+    justify-content: center;
+    }
+  }
+
+  /*third block*/
+@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 480px){
+  .engineering-mobile, .computer-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1F78B2;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+  }
+
+  .engineering-mobile a, .computer-mobile a, .design-mobile a, .data-mobile a, .business-mobile a, .marketing-mobile a {
+    font-size: 24px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .engineering, .computer, .design, .data, .business, .marketing {
+    display: none;
+  }
+
+  .title {
+    background-color: white;
+  }
+
+  .title h1 {
+    background-color: white;
+    color: #696969;
+    text-shadow: 0px 0px 0px;
+  }
+
+  .courses-container {
+    background-color: white;
+  }
+}
+
+/*fourth block*/
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-container .right-container {
+    display: none;
+  }
+
+  .thesis-container .left-container video {
+    width: 100%;
+  }
 }
