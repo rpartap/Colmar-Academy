@@ -1,32 +1,49 @@
 @font-face {
-  font-family: 'Alegreya Sans';
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'), url(https://fonts.gstatic.com/s/alegreyasans/v8/KYNzioYhDai7mTMnx_gDgsmBRJoLbs7X6hY7yFEc97Q.woff2) format('woff2');
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/EjsrzDkQUQCDwsBtLpcVQVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Alegreya Sans';
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'), url(https://fonts.gstatic.com/s/alegreyasans/v8/11EDm-lum6tskJMBbdy9acrysgx4XYXiGyd0rEkyLBs.woff2) format('woff2');
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/DugPdSljmOTocZOR2CItOugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/*universals*/
 html {
-  font-family: 'Alegreya Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #696969;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 /*top logo bar*/
@@ -73,11 +90,13 @@ header {
   align-items: flex-end;
 }
 
-.header-content nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
+.header-content button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
   padding: 4px;
+  border-radius: 8px;
 }
 
 .header-content nav a:hover {
@@ -88,7 +107,7 @@ header {
   display: none;
 }
 
-/*first section*/
+/*first block*/
 
 .intro-banner {
   display: flex;
@@ -118,11 +137,13 @@ header {
   text-shadow: 1px 1px 1px #696969;
 }
 
-button {
+.banner-text button {
   background: #484f4f;
-  width: 100%;
-  padding: 8px 0;
+  font-size: 1.5rem;
+  width: auto;
+  padding: 8px;
   color: white;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -135,7 +156,6 @@ button:hover {
 .practice-container {
  display: flex;
  flex-direction: row;
- padding-bottom: 32px;
 }
 
 /*secong block left side*/
@@ -206,6 +226,19 @@ button:hover {
   padding-bottom: 24px;
 }
 
+.orientation button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #FFB40D;
+  color: black;
+}
 /*second block left side campus box*/
 
 .campus {
@@ -239,6 +272,19 @@ button:hover {
   padding-bottom: 24px;
 }
 
+.campus button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #FFB40D;
+  color: black;
+}
 /*second block left side lecture box*/
 
 .lecture {
@@ -246,7 +292,6 @@ button:hover {
   align-items: center;
   flex-direction: row;
   border: 1px solid #1F78BF;
-  background-color: #FFB40D;
   margin-bottom: 32px;
 }
 
@@ -274,6 +319,23 @@ button:hover {
   padding-bottom: 24px;
 }
 
+.lecture button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #FFB40D;
+  color: black;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+}
 /*third block*/
 
 .start-learning-container {
@@ -302,6 +364,7 @@ button:hover {
   width: 30%;
   margin: 32px 16px;
   background-color: white;
+  flex-grow: 1;
 }
 
 .engineering-mobile, .computer-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
@@ -338,6 +401,11 @@ button:hover {
   padding-top: 16px;
 }
 
+.thesis-video {
+  width: 100%;
+  overflow: hidden;
+}
+
 .thesis-container .title {
   display: flex;
   padding: 16px;
@@ -351,9 +419,11 @@ button:hover {
 
 /*fourth block left side*/
 
-.left-container video {
-  width: 95%;
+.thesis-container video {
+  max-width: 95%;
   padding: 32px 24px;
+  height: auto;
+  display: block;
 }
 
 /*fourth block left side text*/
@@ -656,21 +726,10 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .thesis-container video {
-    display: block;
-    height: auto;
-  }
+
 
   .fisma, .new-york {
-    flex-direction: column;
-  }
-
-  .fisma-image, .new-york-image, .fisma-text, .new-york-text {
-    width: 90%;
-  }
-
-  .fisma-text, .new-york-text {
-    padding-left: 16px;
+    display: none;
   }
 }
 
