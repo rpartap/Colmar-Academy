@@ -514,10 +514,12 @@ footer {
 .terms {
   margin-right: 16px;
   text-decoration: none;
+  color: gray;
 }
 
 .privacy {
   text-decoration: none;
+  color: gray;
 }
 
 /*Responsive Code*/
