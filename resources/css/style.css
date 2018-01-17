@@ -365,6 +365,30 @@ button:hover {
   margin: 32px 16px;
   background-color: white;
   flex-grow: 1;
+  position: relative;
+}
+
+
+.engineering button, .computer button, .design button, .data button, .business button, .marketing button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+button:hover {
+  background-color: #FFB40D;
+  color: black;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
 }
 
 .engineering-mobile, .computer-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
@@ -373,6 +397,7 @@ button:hover {
 
 .engineering p, .computer p, .design p, .data p, .business p, .marketing p {
   font-size: 20px;
+  padding-bottom: 24px;
 }
 
 .engineering-text, .computer-text, .design-text, .data-text, .business-text, .marketing-text {
@@ -417,10 +442,28 @@ button:hover {
   color: #696969;
 }
 
+.thesis-container button {
+  background-color: #1F78B2;
+  color: white;
+  width: auto;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+}
+
 /*fourth block left side*/
 
 .thesis-container video {
-  max-width: 95%;
+  width: 95%;
   padding: 32px 24px;
   height: auto;
   display: block;
@@ -473,8 +516,26 @@ button:hover {
   width: 35%;
 }
 
-.fisma {
+.fisma:hover {
   background-color: #FFB40D;
+  color: black;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.new-york:hover {
+  background-color: #FFB40D;
+  color: black;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
 }
 
 .fisma-text p, .new-york-text p, .thesis-text p {
@@ -609,7 +670,7 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .left-container {
+  .practice-container .left-container {
     display: none;
   }
 
@@ -687,18 +748,31 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #1F78B2;
     justify-content: center;
     align-items: center;
     margin: 8px;
     padding: 8px;
   }
 
-  .engineering-mobile a, .computer-mobile a, .design-mobile a, .data-mobile a, .business-mobile a, .marketing-mobile a {
+  .engineering-mobile button, .computer-mobile button, .design-mobile button, .data-mobile button, .business-mobile button, .marketing-mobile button {
     font-size: 24px;
     color: white;
+    background-color: #1F78B2;
     padding: 16px;
+    margin: 0px;
     text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+  }
+
+  button:hover {
+    background-color: #FFB40D;
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
   }
 
   .engineering, .computer, .design, .data, .business, .marketing {
@@ -729,8 +803,21 @@ footer {
 
 @media only screen and (max-width: 480px) {
 
+  .thesis-video {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+  }
 
-  .fisma, .new-york {
+  .thesis-container .left-container {
+    width: 100%;
+  }
+
+  .thesis-container .right-container {
+    display: none;
+  }
+
+  .thesis-text {
     display: none;
   }
 }
