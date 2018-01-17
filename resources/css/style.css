@@ -378,8 +378,6 @@ button:hover {
   padding: 8px;
   margin-bottom: 8px;
   align-items: flex-end;
-  position: absolute;
-  bottom: 0;
 }
 
 button:hover {
@@ -725,6 +723,26 @@ footer {
     width: 75%;
     justify-content: center;
     background-color: #1F78B2;
+  }
+
+  .engineering button, .computer button, .design button, .data button, .business button, .marketing button {
+    background-color: white;
+    color: #1F78B2;
+    width: auto;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    align-items: flex-end;
+  }
+
+  button:hover {
+    background-color: #FFB40D;
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
   }
 
   .engineering-image, .computer-image, .design-image, .data-image, .business-image, .marketing-image {
